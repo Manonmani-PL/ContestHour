@@ -1,0 +1,2 @@
+$query = $this->db->query("SELECT sum(request_amount)prize,designer_id  FROM `designer_debit` WHERE `req_status` =0  GROUP BY `designer_id`");
+				 return $query->result();
